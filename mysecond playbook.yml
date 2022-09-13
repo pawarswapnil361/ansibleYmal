@@ -2,7 +2,7 @@
 - hosts: all 
   become: yes 
   tasks: 
-  - name: install tree
+  - name: install wget
     apt:
-      name: tree
-      state: latest
+      name: wget
+      state: present
